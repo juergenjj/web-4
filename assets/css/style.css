@@ -1,0 +1,458 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@700&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+  @import url('https://fonts.cdnfonts.com/css/gotham');
+                
+  :root {
+
+    --blanco: #fff;
+    --danger: #dc3545;
+    --gris: ##151515;;
+    --grisClaro: #404040;
+    --dangerbtn: #ff2020;
+    --negro:black;
+
+    --font-family: 'Gotham Black', sans-serif;
+
+  }
+
+
+
+.btn {
+    background: #ff2020;
+    font-family: "Josefin Sans",sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    padding: 30px 28px;
+    border-radius: 0px;
+    display: inline-block;
+    line-height: 0;
+    cursor: pointer;
+    margin-bottom: 0;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+    margin: 0
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #4a4a4b;
+    z-index: 1;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0);
+    border-radius: 0px
+}
+
+.btn:hover::before {
+    transform: scaleX(1);
+    color: #fff !important;
+    z-index: -1
+}
+
+
+
+  body {
+    background-color: var(--grisClaro); 
+
+    
+  }
+  
+
+  h1,h2{
+    color: #fff;
+    font-family: 'Gotham Black', sans-serif;
+  }
+
+
+
+  p{
+    color: var(--blanco);
+  }
+  
+
+  .navbar-brand.logo {
+    text-decoration: none;
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--danger)
+  }
+
+
+
+.navbar-toggler{
+  border-color: var(--danger);
+}
+
+ .custom-toggler .navbar-toggler-icon {
+  background-color: var(--danger);
+
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  z-index: -1;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 30px; /* Ajusta el valor según el espaciado deseado */
+}
+
+.navbar .nav-link {
+  font-size: 18px;
+  font-weight: 200px;
+  color: var(--blanco);
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.nav-link.active {
+  text-decoration: none;
+  padding: 7px;
+  color: var(--danger);
+  font-size: 16px;
+  transition: 0.3s;
+  
+}
+
+.navbar .nav-link.active{
+  background: #333333;
+  color: var(--danger);
+  border-radius: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+}
+
+
+
+section {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+
+
+
+
+
+
+  /*-----------------------------------*\
+   * #about
+  \*-----------------------------------*/
+
+
+
+
+.about-text {
+	background: #000000;
+	height: 640px;
+	padding: 120px 70px 0 70px;
+}
+
+.about-text .section-title {
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.about-text .at-desc {
+	margin-bottom: 27px;
+}
+
+.about-text .at-desc p {
+	color: #c4c4c4;
+}
+
+.about-text .about-bar .ab-item {
+	margin-bottom: 34px;
+}
+
+.about-text .about-bar .ab-item p {
+	color: #ffffff;
+	margin-bottom: 13px;
+}
+
+
+
+.barfiller {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+
+.about-text .about-bar .ab-item .barfiller {
+	background: #fff;
+	height: 5px;
+	border: none;
+	margin-bottom: 0;
+}
+
+.about-text .about-bar .ab-item .barfiller .tip {
+	margin-top: 0;
+	padding: 0;
+	font-size: 14px;
+	color: #ffffff;
+	background: transparent;
+	position: initial !important;
+	float: right;
+	margin-top: -40px;
+}
+
+.about-text .about-bar .ab-item .barfiller .tip:after {
+	display: none;
+}
+
+
+
+  
+  
+  
+  
+  /*---------------------
+  Classes Section
+  -----------------------*/
+  
+  
+    .card-effect {
+      background-color: var(--gris);
+      padding: 25px;
+      transition: all 0.35s ease;
+      letter-spacing: 0.05em;
+    }
+    
+  .popular .btn {
+
+      font-size: 10px;
+      font-weight: 500;
+      padding: 20px 18px;
+  
+  
+  }
+  
+ 
+
+  
+  
+  .ci-pic {
+   
+    height: 430px;
+    padding: 0;
+    border: 0px solid;
+  }
+  
+
+
+ 
+  
+  
+  .ci-pic img {
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+.classes-section {
+	background: #151515;
+	padding-bottom: 80px;
+}
+
+.classes-section .section-title {
+	margin-bottom: 35px;
+}
+
+.class-item {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.class-item .ci-pic img {
+	min-width: 100%;
+}
+
+.class-item .ci-text {
+	background: #0a0a0a;
+	position: relative;
+	padding: 10px 30px 26px 30px;
+	z-index: 1;
+}
+
+.class-item .ci-text:after {
+	position: absolute;
+	left: -3px;
+	top: -44px;
+	height: 100px;
+	width: 600px;
+	border-top: 4px solid #464646;
+	background: #0a0a0a;
+	content: "";
+	-webkit-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+	z-index: -1;
+}
+
+.class-item .ci-text span {
+	color: var(--dangerbtn);
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.class-item .ci-text h5 {
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 4px;
+}
+
+.class-item .ci-text h4 {
+	font-size: 26px;
+	color: #ffffff;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 4px;
+}
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  .pricing i {
+
+
+    font-size: 23px;
+    color: var(--danger);
+    border-radius: 100px;
+  
+ 
+   
+ 
+    
+
+  }
+  
+  .pricing ul li {
+    margin-top: 8px;
+    color: var(--blanco);
+  }
+  
+  
+.Pricing-STARTER{
+  color: var(--dangerbtn);
+}
+
+
+
+.team-member img {
+  width: 125px;
+  height: 125px;
+  border-radius: 100px;
+  border-color: var(--danger);
+  border-width: 10px;
+}
+
+
+
+
+
+
+
+.col-img {
+    background-image: url(../Imagenes/pexels-andres-ayrton-6551068.jpg);
+
+    background-size: cover;
+    min-height: 500px;
+}
+
+
+
+
+
+/* 
+footerrr
+*/
+
+
+/*** Footer ***/
+.footer {
+
+  padding-top: 120px;
+  padding-bottom: 0px;
+
+}
+
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #B0B9AE;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  color: var(--light);
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.copyright {
+  color: #B0B9AE;
+}
+
+.copyright {
+  background: #111111;
+}
+
+.copyright a:hover {
+  color: var(--primary) !important;
+}
